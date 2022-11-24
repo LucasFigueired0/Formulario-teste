@@ -1,0 +1,37 @@
+.coluna1 {
+    width: 100%;
+   /* background: #3333; */
+}
+
+.coluna2 {
+    
+    width: 100%;
+}
+
+.tituloCadastroNoticia {
+    padding: 10px;
+    font-size: 25px;
+    color: #2F7FF9;
+}
+
+.tituloNoticia {
+    right: 0%;
+    font-size: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+.corpo{
+    padding-bottom: 50px;
+}
+
+.arquivoCampo{
+    text-align: left;
+    background: #F8F9FA;
+    
+}
+
+.botaoSubmit{
+    padding-top: 10px;
+    text-align: right;
+}
