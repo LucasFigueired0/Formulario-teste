@@ -6,13 +6,6 @@ import styles from './CadastroNoticia.module.css'
 
 function CadastroNoticia() {
     const [formValues, setFormValues] = useState({})
-    const dadoFim = '';
-    //Configurando JSON SERVER
-    const FormRef = useRef()
-    const url = 'http://localhost:3000'
-    async function CarregaDados() {
-        await axios.get(url + 'noticias').then(response => setFormValues(response.formValues))
-    }
     //---------------------------------
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -59,7 +52,7 @@ function CadastroNoticia() {
     // console.log("Valor: ", valor)
     // // console.log("Valores finais ",handleSubmit)
     return (
-        <form onSubmit={handleSubmit} className="container" ref={FormRef}>
+        <form onSubmit={handleSubmit} className="container">
             {/* Título da página */}
             <h2 className={styles.tituloCadastroNoticia}>Cadastramento de notícias</h2>
             {/* Campo de título da notícia */}
