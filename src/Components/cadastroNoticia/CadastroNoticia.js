@@ -1,4 +1,5 @@
-import React, { Component, component } from 'react'
+import React, { Component, component, useEffect } from 'react'
+import axios from 'axios';
 import { useRef } from 'react';
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -7,10 +8,18 @@ import styles from './CadastroNoticia.module.css'
 
 function CadastroNoticia() {
     const [formValues, setFormValues] = useState({})
+    const dadoFim = '';
+    //Configurando JSON SERVER
+    const FormRef = useRef()
+    const url = 'http://localhost:3000'
+    async function CarregaDados() {
+        await axios.get(url + 'noticias').then(response => setFormValues(response.formValues))
+    }
+    //---------------------------------
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        console.log("***HandleInputChange ", name, value);
+        // console.log("***HandleInputChange ", name, value);
         setFormValues({ ...formValues, [name]: value });
     };
 
@@ -18,29 +27,48 @@ function CadastroNoticia() {
         e.preventDefault();
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData);
-
         console.log("HandleSubmit ", data);
+        
+        let titulo = data.tituloNoticia;
+        let corpo = data.corpoDaNoticia
+       
+       
+        axios.post("http://localhost:3000/noticias",{titulo,corpo})
+        // .then(res => {
+        //     console.log(res);
+        //     console.log(res.data)
+        // })
     };
+
+
 
     //Upload de arquivo
-    const filesElement = useRef(null);
+    // const filesElement = useRef(null);
 
-    const sendFile = async () => {
-        const dataForm = new FormData();
-        for (const file of filesElement.current.files) {
-            dataForm.append('file', file);
-        }
-        const res = await fetch(`http://localhost:8080/upload`, {
-            method: 'POST',
-            body: dataForm,
-        });
-        const data = await res.json();
-        console.log(data);
-    };
+    // const sendFile = async () => {
+    //     const dataForm = new FormData();
+    //     for (const file of filesElement.current.files) {
+    //         dataForm.append('file', file);
+    //     }
+    //     const res = await fetch(`http://localhost:3000`, {
+    //         method: 'POST',
+    //         body: dataForm,
+    //     });
+    //     const data = await res.json();
+    //     console.log(data);
+    // };
+    // async function inputaDados(e){
+    //     e.preventDefault();
+    //     const dados = {
 
-    console.log("****formValues ", formValues)
+    //     }
+    // }
+    // console.log("****formValues ", formValues)
+    // let valor = ;
+    // console.log("Valor: ", valor)
+    // // console.log("Valores finais ",handleSubmit)
     return (
-        <form onSubmit={handleSubmit} className="container">
+        <form onSubmit={handleSubmit} className="container" ref={FormRef}>
             {/* Título da página */}
             <h2 className={styles.tituloCadastroNoticia}>Cadastramento de notícias</h2>
             {/* Campo de título da notícia */}
@@ -79,12 +107,12 @@ function CadastroNoticia() {
                     <div className="col-sm-9 linha1">
                         <div className={styles.coluna2}>
                             <div className={styles.arquivoCampo}>
-                                <input type="file" accept="image/*" ref={filesElement}/>
+                                <input type="file" accept="image/*" />
                             </div>
                         </div>
 
                         <div className={styles.botaoSubmit}>
-                            <button type="submit" className="btn btn-secondary btn-lg" onClick={sendFile}>Publicar</button>
+                            <button type="submit" className="btn btn-secondary btn-lg" >Publicar</button>
                         </div>
                     </div>
                 </div>

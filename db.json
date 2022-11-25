@@ -1,0 +1,19 @@
+{
+  "noticias": [
+    {
+      "titulo": "Primeira Notícia",
+      "corpo": "Lorem ipsum dolor sit amet. Et nihil similique quo cumque beatae non dignissimos voluptas est sint facilis ea possimus accusantium. At quibusdam dolor non voluptatem ipsam est sunt voluptatem! Et asperiores perspiciatis et perspiciatis blanditiis et adipisci facere sed explicabo omnis 33 doloribus accusamus. Aut accusantium similique ex aliquam laborum ea quia tenetur est atque quam aut molestiae explicabo qui repellendus iste ut libero impedit.\n\nEt quam facere ad architecto temporibus eum perspiciatis commodi non corporis officiis id quos sint aut enim quibusdam qui voluptatem odit. Et officiis quas sed similique molestiae et voluptatum consequatur. 33 odit sunt in sunt eius rem corrupti magnam in totam voluptatum. Ut adipisci error est aliquid nihil qui dolores debitis id explicabo consequatur sit mollitia architecto vel officia veritatis.\n\nAut dolorem beatae aut pariatur animi ut assumenda veniam ut veniam officiis! Eos pariatur voluptas a soluta ratione et error nesciunt qui soluta suscipit aut deleniti impedit aut aspernatur iste et consequuntur nesciunt. Quo aperiam atque sed sint fuga non rerum sunt.",
+      "id": 1
+    },
+    {
+      "titulo": "Segunda Notícia",
+      "corpo": "Lorem ipsum dolor sit amet. Aut soluta similique At saepe perferendis et porro accusantium. Et molestiae nisi aut commodi autem in aspernatur doloremque sed impedit unde aut architecto suscipit. </p><p>Et galisum mollitia in ducimus cupiditate et earum corporis aut nemo tenetur. Et maiores veritatis sed veritatis nemo ea animi voluptatibus est beatae saepe cum dolores eveniet in veniam explicabo. Ea sunt reprehenderit in quia perferendis et excepturi tenetur et minus soluta aut fugit quae et aliquid culpa aut cupiditate eveniet! </p><p>Nam facere iusto quo beatae tempora hic doloremque architecto ab delectus esse non fugiat perferendis non tempora cumque qui ullam molestias. Ad officia libero et deserunt error aut magnam temporibus. Aut quibusdam deserunt vel optio beatae non nihil dolores rem maiores sunt qui amet dolorem.\n",
+      "id": 2
+    },
+    {
+      "titulo": "Segunda Notícia",
+      "corpo": "Lorem ipsum dolor sit amet. Aut soluta similique At saepe perferendis et porro accusantium. Et molestiae nisi aut commodi autem in aspernatur doloremque sed impedit unde aut architecto suscipit. \n",
+      "id": 3
+    }
+  ]
+}
