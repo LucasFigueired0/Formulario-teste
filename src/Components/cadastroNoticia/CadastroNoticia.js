@@ -1,7 +1,5 @@
-import React, { Component, component, useEffect } from 'react'
 import axios from 'axios';
-import { useRef } from 'react';
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import styles from './CadastroNoticia.module.css'
@@ -16,7 +14,6 @@ function CadastroNoticia() {
         await axios.get(url + 'noticias').then(response => setFormValues(response.formValues))
     }
     //---------------------------------
-
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         // console.log("***HandleInputChange ", name, value);
@@ -31,13 +28,7 @@ function CadastroNoticia() {
         
         let titulo = data.tituloNoticia;
         let corpo = data.corpoDaNoticia
-       
-       
         axios.post("http://localhost:3000/noticias",{titulo,corpo})
-        // .then(res => {
-        //     console.log(res);
-        //     console.log(res.data)
-        // })
     };
 
 
