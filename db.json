@@ -1,19 +1,11 @@
 {
   "noticias": [
     {
-      "titulo": "Lorem ipsum dolor sit amet",
-      "corpo": "Ut recusandae veniam et repellendus alias id necessitatibus illo et nulla velit. Et earum quia et illum tempore ad velit sequi in voluptate dolor 33 atque delectus. Qui corporis expedita et molestias minus et magni quasi in dolores molestiae non ratione quasi quo harum obcaecati vel natus facere. A quod sequi in impedit earum vel adipisci culpa non quia reprehenderit vel amet Quis.\n\nUt deserunt quia sed libero sint eum nostrum quod aut vero illum ea dolores quidem eum fugiat excepturi. At pariatur internos non laborum iure sit inventore voluptas ut possimus omnis sed molestiae praesentium qui dolorum dolore eos ipsam rerum? Ea autem nulla ut asperiores doloremque non aliquid beatae et laboriosam necessitatibus! Non accusamus consequatur qui placeat temporibus aut esse quia in fuga magnam ut quam aliquam.",
+      "titulo": "teste 01",
+      "corpo": "corpo da notícia",
+      "urlImagem": "https://firebasestorage.googleapis.com/v0/b/reactuploads-382c9.appspot.com/o/images%2Fdefesa-civil-seeklogo.png?alt=media&token=46312d04-f605-4b70-a3dc-ae2eaef5cea4",
+      "dataPublicacao": "2022-11-27T01:41:54.338Z",
       "id": 1
-    },
-    {
-      "titulo": "Notícia teste 02",
-      "corpo": "Corpo da notícia teste 02",
-      "id": 2
-    },
-    {
-      "titulo": "Macaco",
-      "corpo": "Piranha",
-      "id": 3
     }
   ]
 }
