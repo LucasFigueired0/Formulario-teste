@@ -51,43 +51,16 @@ function CadastroNoticia() {
                     const urlImagem = url;
                     const dataPublicacao = new Date();
                     
-                    axios.post("http://localhost:3000/noticias", { titulo, corpo, urlImagem, dataPublicacao})
+                    axios.post("http://localhost:5000/noticias", { titulo, corpo, urlImagem, dataPublicacao})
 
                     alert("Notícia enviada!");
-            
+                    window.location.reload();
                 })
             }
         ) 
         /////////////////////////////////////////////////
        
     };
-
-    // const upload = (e) => {
-    //     e.preventDefault()
-    //     if (image == null)
-    //         return;
-
-    //     const storageRef = ref(storage, `images/${image.name}`)
-    //     const uploadTask = uploadBytesResumable(storageRef, image)
-    //     // console.log("URL imagem: ",setImage)
-
-
-    //     uploadTask.on(
-    //         "state_changed",
-    //         snapshot => {
-    //             const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-    //             setProgress(progress);
-    //         },
-    //         error => {
-    //             alert(error)
-    //         },
-    //         () => {
-    //             getDownloadURL(uploadTask.snapshot.ref).then(url => {
-    //                 setImage(url)
-    //             })
-    //         }
-    //     ) 
-    // }
 
     console.log(image)
 
