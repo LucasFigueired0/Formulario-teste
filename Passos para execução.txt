@@ -1,0 +1,13 @@
+Passos de configuração do meu projeto:
+
+1 - npm install
+
+2- npm install react-bootstrap bootstrap -d
+
+3 - npm install bootstrap -D
+
+4 - npm install axios -D
+
+5 - npm add firebase -D
+
+6 - npm add json-server -D
